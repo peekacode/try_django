@@ -1,0 +1,16 @@
+{% extends "base.html" %} 
+
+
+{% block content %}
+
+{% if title %}
+    <h1>{{ title}}</h1>
+{% endif %}
+
+<form method='POST', action='.'>  {% csrf_token %}
+    {{form.as_p}}  
+    <button type='submit'>Post</button>
+</form>
+
+    <p> This is Contact us page content </p1>
+{% endblock %}

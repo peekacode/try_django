@@ -12,5 +12,6 @@ def about_page(request):
     #return HttpResponse("<h1> About </h1>")
 
 def contact_page(request):
-    return render(request, "contact.html", {"title": "Contact us.."})
+    print(request.POST)
+    return render(request, "form.html", {"title": "Contact us.."})
     #return HttpResponse("<h1> Contact Us </h1>")
