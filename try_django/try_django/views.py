@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def home_page(request):
     my_title = "Hello There..."
-    return render(request, "hello_world.html", {"title": my_title})
+    return render(request, "index.html", {"title": my_title})
     #return HttpResponse("<h1> Hello World! </h1>")
 
 def about_page(request):
